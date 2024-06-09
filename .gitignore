@@ -2,4 +2,5 @@ venv/
 .env
 env.py
 __pycache__
+task.txt
 
