@@ -4,7 +4,8 @@ services:
     image: mongo:6
     container_name: mongodb
     environment:
-    - MONGO_URI=MONGODB_URI
+      - MONGO_URI=MONGODB_URI
+    volumes:
       - mongo_data:/data/db
 
   fastapi-app:
@@ -20,3 +21,4 @@ services:
 
 volumes:
   mongo_data:
+  
