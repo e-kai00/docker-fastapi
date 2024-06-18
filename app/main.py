@@ -17,7 +17,7 @@ async def lifespan(app):
 app = FastAPI(lifespan=lifespan)
 
 @app.get('/')
-async def home():
+def home():
     welcome_msg = (
         "Welcome to the app!<br><br>"
         "This application features 2 main endpoints:<br>"
